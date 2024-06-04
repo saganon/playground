@@ -32,6 +32,6 @@ test("Mars should be in north 3", () => {
   expect(marsRover([0, 0], [3, 3], "FFRRRR")).toBe("0:2:N");
 });
 
-// test("RIP Mars", () => {
-//   expect(marsRover([0, 0], [3, 3], "FFRLL")).toBe("RIP");
-// });
+test("RIP Mars", () => {
+  expect(marsRover([0, 0], [3, 3], "FFRLL")).toBe("RIP");
+});

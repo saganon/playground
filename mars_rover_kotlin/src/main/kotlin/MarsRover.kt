@@ -2,7 +2,7 @@ package org.example
 
 class MarsRover {
     fun execution(): String {
-        val name = "Shanon"
+        val name = "Nanami"
         return "Hello, $name!"
     }
 }

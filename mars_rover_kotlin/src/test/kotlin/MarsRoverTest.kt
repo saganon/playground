@@ -6,6 +6,6 @@ class MarsRoverTest {
     @Test
     fun testName() {
         val marsRover = MarsRover().execution()
-        assertEquals("Hello, Shanon!", marsRover)
+        assertEquals("Hello, Nanami!", marsRover)
     }
 }

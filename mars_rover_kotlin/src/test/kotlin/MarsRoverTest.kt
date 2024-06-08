@@ -1,11 +1,11 @@
-import com.sun.tools.javac.Main
-import org.example.main
+import org.example.MarsRover
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
 class MarsRoverTest {
     @Test
     fun testName() {
-        assertEquals("Hello, Shanon!", main())
+        val marsRover = MarsRover().execution()
+        assertEquals("Hello, Shanon!", marsRover)
     }
 }

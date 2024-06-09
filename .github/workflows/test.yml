@@ -18,15 +18,19 @@ jobs:
     
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v3
-
-    - name: Change directory to specific folder
-      run: cd mars_rover_kotlin
     
     - name: Generate gradle wrapper
-      run: gradle wrapper
+      run: |
+        cd mars_rover_kotlin
+        echo "Running script in mars_rover_kotlin"
+        gradle wrapper
     
     - name: Build with Gradle
-      run: ./gradlew build
+      run: |
+        cd mars_rover_kotlin
+        ./gradlew build
     
     - name: Run tests
-      run: ./gradlew test
+      run: |
+        cd mars_rover_kotlin
+        ./gradlew test

@@ -23,17 +23,10 @@ jobs:
       run: cd mars_rover_kotlin
     
     - name: Generate gradle wrapper
-      run: |
-        cd mars_rover_kotlin
-        echo "Running script in mars_rover_kotlin"
-        gradle wrapper
+      run: gradle wrapper
     
     - name: Build with Gradle
-      run: |
-        cd mars_rover_kotlin
-        ./gradlew build
+      run: ./gradlew build
     
     - name: Run tests
-      run: |
-        cd mars_rover_kotlin
-        ./gradlew test
+      run: ./gradlew test

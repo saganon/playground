@@ -1,6 +1,5 @@
 name: Playground Test
 
-on: [push]
 on:
   push:
     paths:

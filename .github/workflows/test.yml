@@ -1,9 +1,14 @@
-name: Kotlin Test
+name: Playground Test
 
 on: [push]
+on:
+  push:
+    paths:
+      - 'mars_rover_kotlin/**'
 
 jobs:
   kotlin-test:
+    if: contains(github.event.commits.*.modified, 'mars_rover_kotlin/')
     runs-on: ubuntu-latest
     
     steps:

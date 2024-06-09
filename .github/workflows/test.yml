@@ -3,7 +3,7 @@ name: Kotlin Test
 on: [push]
 
 jobs:
-  test:
+  kotlin-test:
     runs-on: ubuntu-latest
     
     steps:
@@ -18,12 +18,6 @@ jobs:
     
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v3
-    
-    - name: Generate gradle wrapper
-      run: |
-        cd mars_rover_kotlin
-        echo "Running script in mars_rover_kotlin"
-        gradle wrapper
     
     - name: Build with Gradle
       run: |

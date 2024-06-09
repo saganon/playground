@@ -10,9 +10,6 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v4
 
-    - name: Change directory to specific folder
-      run: cd mars_rover_kotlin
-
     - name: Set up JDK
       uses: actions/setup-java@v4
       with:
@@ -21,6 +18,9 @@ jobs:
     
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v3
+
+    - name: Change directory to specific folder
+      run: cd mars_rover_kotlin
     
     - name: Generate gradle wrapper
       run: |
@@ -29,7 +29,11 @@ jobs:
         gradle wrapper
     
     - name: Build with Gradle
-      run: ./gradlew build
+      run: |
+        cd mars_rover_kotlin
+        ./gradlew build
     
     - name: Run tests
-      run: ./gradlew test
+      run: |
+        cd mars_rover_kotlin
+        ./gradlew test

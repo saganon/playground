@@ -7,7 +7,7 @@ on:
 
 jobs:
   kotlin-test:
-    if: contains(github.event.commits.*.modified, 'mars_rover_kotlin/')
+    if: contains(github.event.commits.*.modified, 'mars_rover_kotlin/**')
     runs-on: ubuntu-latest
     
     steps:

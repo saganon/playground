@@ -2,8 +2,8 @@ name: Playground Test
 
 on:
   push:
-    paths:
-      - 'mars_rover_kotlin/**'
+    branches:
+      - main
 
 jobs:
   kotlin-test:

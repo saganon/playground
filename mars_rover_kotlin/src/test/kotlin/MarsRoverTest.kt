@@ -8,6 +8,7 @@ class MarsRoverTest {
     @Test
     fun marsTest() {
         assertEquals("0:2:W", marsRover("FFR"))
+        assertEquals("0:2:W", marsRover("FFLLL"))
         assertEquals("1:2:N", marsRover("FFRFL"))
         assertEquals("0:2:E", marsRover("FFRRR"))
         assertEquals("1:2:S", marsRover("FFRFR"))

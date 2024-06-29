@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
 class MarsRoverTest {
-    private fun marsRover(movement: String) = MarsRover().execution(movement);
+    private fun marsRover(movement: String) = MarsRover().execution(movement)
 
     @Test
     fun marsTest() {

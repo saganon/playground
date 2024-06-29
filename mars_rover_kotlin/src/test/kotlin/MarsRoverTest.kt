@@ -12,5 +12,6 @@ class MarsRoverTest {
         assertEquals("1:2:N", marsRover("FFRFL"))
         assertEquals("0:2:E", marsRover("FFRRR"))
         assertEquals("1:2:S", marsRover("FFRFR"))
+        assertEquals("1:1:S", marsRover("FFRFRF"))
     }
 }
